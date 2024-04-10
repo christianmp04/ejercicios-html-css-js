@@ -8,7 +8,7 @@
 <body>
     <h1>Formulario de Registro</h1>
     <form action="#" method="post">
-        <fieldset>
+        
             <Strong>Información Personal</Strong><br>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br>
@@ -17,16 +17,13 @@
             <input type="text" id="apellidos" name="apellidos" required><br>
 
             <label>Dirección:</label><br>
-            <label for="tipo_via">Tipo de Vía:</label>
+            <label for="tipo_via">Tipo de Via:</label>
             <input type="text" id="tipo_via" name="tipo_via" required><br>
 
-            <label for="nombre_via">Nombre de la Vía:</label>
+            <label for="nombre_via">Nombre de la Via:</label>
             <input type="text" id="nombre_via" name="nombre_via" required><br>
 
-            <label for="interno">Interno:</label>
-            <input type="text" id="interno" name="interno"><br>
-
-            <label for="codigo_postal">Código Postal:</label>
+            <label for="codigo_postal">Codigo Postal:</label>
             <input type="text" id="codigo_postal" name="codigo_postal" required><br>
 
             <label for="ciudad">Ciudad:</label>
@@ -35,7 +32,7 @@
             <label for="provincia">Provincia:</label>
             <input type="text" id="provincia" name="provincia" required><br>
 
-            <label for="pais">País:</label>
+            <label for="pais">Pais:</label>
             <input type="text" id="pais" name="pais" required><br>
 
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
@@ -44,10 +41,10 @@
             <label for="nota_media">Nota Media en la Universidad:</label>
             <input type="number" id="nota_media" name="nota_media" min="0" max="10" step="0.01" required><br>
 
-            <label for="telefono">Número de Teléfono:</label>
+            <label for="telefono">Numero de Telefono:</label>
             <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br>
 
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">Correo Electronico:</label>
             <input type="email" id="email" name="email" required><br>
 
             <label for="password">Contraseña:</label>
@@ -56,7 +53,7 @@
             <label for="confirm_password">Repetir Contraseña:</label>
             <input type="password" id="confirm_password" name="confirm_password" required><br>
 
-            <label for="pais_select">Seleccionar País:</label>
+            <label for="pais_select">Seleccionar Pais:</label>
             <select id="pais_select" name="pais_select" required>
                 <option value="España">España</option>
                 <option value="Francia">Francia</option>
@@ -67,16 +64,21 @@
             <label for="tipo_cuenta">Tipo de Cuenta:</label>
             <select id="tipo_cuenta" name="tipo_cuenta" required>
                 <option value="Gratuita">Gratuita</option>
-                <option value="Básica">Básica</option>
+                <option value="Basica">Basica</option>
                 <option value="Premium">Premium</option>
-            </select><br>
+            </select>
+            <div class="descripcion descripcion_gratuita">
+                <p>La cuenta gratuita ofrece acceso simple y gratuito a nuestra plataforma.</p>
+            </div>
+            <div class="descripcion descripcion_basica">
+                <p>La cuenta básica ofrece una experiencia mejorada en comparación con la cuenta gratuita. </p>
+            </div>
+            <div class="descripcion descripcion_premium">
+                <p>La cuenta premium ofrece la experiencia más completa en nuestra plataforma.</p>
+            </div>
 
-            <div id="descripcion_cuenta" style="display:none;">
-                <p>Descripción de la cuenta seleccionada.</p>
-            </div><br>
-
-            <label for="sobre_mi">Sobre Mí:</label><br>
-            <textarea id="sobre_mi" name="sobre_mi" rows="4" cols="50"></textarea><br>
+            <label for="sobre_mi">Sobre Mi:</label><br>
+            <textarea id="sobre_mi" name="sobre_mi" rows="5" cols="45"></textarea><br>
 
             <label for="foto_perfil">Foto de Perfil:</label>
             <input type="file" id="foto_perfil" name="foto_perfil"><br>
@@ -87,17 +89,5 @@
             <input type="submit" value="Enviar">
         </fieldset>
     </form>
-
-    <script>
-        document.getElementById("tipo_cuenta").addEventListener("change", function() {
-            var selectedOption = this.value;
-            var descripcionCuenta = document.getElementById("descripcion_cuenta");
-            if (selectedOption === "Gratuita") {
-                descripcionCuenta.style.display = "block";
-            } else {
-                descripcionCuenta.style.display = "none";
-            }
-        });
-    </script>
 </body>
 </html>

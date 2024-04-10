@@ -1,0 +1,35 @@
+    /* Estilos generales */
+    table {
+        margin-bottom: 20px;
+        width: 100%;
+        margin-right: auto;
+        border: 2px solid #000000;
+    }
+    td{
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        
+    }
+    body{
+        margin-right: 100px;
+        
+    }
+    /* Colores de fondo */
+    .rojo { background-color: red; }
+    .verde { background-color: green; }
+    .azul { background-color: blue; }
+    .amarillo { background-color: yellow; }
+    .naranja { background-color: orange; }
+
+    /* Estilos de los bordes rectangulares */
+
+    .cuadrado {
+        width: 150px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    /* Estilos de los bordes redondeados */
+    .redondeado {
+        border-radius: 50%;
+}

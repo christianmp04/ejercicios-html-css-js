@@ -1,0 +1,33 @@
+/* Estilos generales */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila {
+    display: flex;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Colores de fondo */
+.rojo { background-color: red; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+
+/* Alinear al inicio */
+.inicio { justify-content: flex-start; }
+
+/* Alinear al final */
+.final { justify-content: flex-end; }
+
+/* Espaciado ocupando toda la fila */
+.espacio { justify-content: space-between; }
+
+/* Invertir el orden original */
+.invertida { flex-direction: row-reverse; }

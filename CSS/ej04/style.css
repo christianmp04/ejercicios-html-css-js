@@ -1,0 +1,33 @@
+/* Estilos generales */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 5px;
+    border: 2px solid black;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    position: relative;
+}
+
+
+.rojo { background-color: red; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+.amarillo { background-color: yellow; }
+.naranja { background-color: orange; }
+
+
+.cuadrado::after {
+    content: "";
+    position: absolute;
+    width: 780%;
+    height: 103%;
+    z-index: -1; 
+    top: 0;
+    left: 103%;
+    background-color: red;
+}

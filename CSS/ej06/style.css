@@ -1,0 +1,24 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 5px;
+    border: 2px solid black;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    transform: rotate(45deg);
+    transition: transform 0.2s; 
+}
+
+.rojo { background-color: red; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+.amarillo { background-color: yellow; }
+.naranja { background-color: orange; }
+
+.cuadrado:hover {
+    transform: rotate(0deg);
+}

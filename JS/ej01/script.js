@@ -1,4 +1,4 @@
 function cambiarContenido() {
-    var divContenido = document.getElementById("contenido");
+    let divContenido = document.getElementById("contenido");
     divContenido.textContent = "Hola mundo";
 }
